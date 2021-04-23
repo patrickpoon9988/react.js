@@ -1,0 +1,16 @@
+.jumbotron {
+    background-color: blanchedalmond;
+    padding: 20px 30px 5px ;
+}
+
+h1 {
+    color: rgb(23, 139, 160);
+}
+
+.navbar nav uncontrolleddropdown {
+    color: blueviolet;
+}
+
+.breadcrumb {
+    margin-left: 50px;
+}
