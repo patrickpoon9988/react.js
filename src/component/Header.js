@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Jumbotron, Navbar, NavbarBrand, NavbarToggler, NavItem, Nav, Dropdown, DropdownToggle, DropdownMenu, DropdownItem,UncontrolledDropdown  } from 'reactstrap';
+import {Navbar, NavbarBrand, NavbarToggler, NavItem, Nav, Dropdown, DropdownToggle, DropdownMenu, DropdownItem,UncontrolledDropdown  } from 'reactstrap';
 import Footer from './Footer';
 import {NavLink, Link} from 'react-router-dom';
 
@@ -17,7 +17,6 @@ class Header extends Component {
                     </NavbarBrand> {' '}
                     人有多大膽，地有多大產。
                 </Navbar>
-                <Jumbotron>
                     <img src='assets/images/2.jpg' />
                     <h1>Welcome to the Dogfry stock </h1>
                     <h1>歡迎來到 百萬大道</h1>
@@ -51,9 +50,7 @@ class Header extends Component {
               </DropdownMenu>
             </UncontrolledDropdown>
                         </Nav>
-
                     </Navbar>
-                </Jumbotron>
             </div>
         );
     }

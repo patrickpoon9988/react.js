@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './component/Header';
 import Main from './component/Main';
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect, Routes } from "react-router-dom";
 import Footer from './component/Footer';
 import Contact from './component/Contact';
 
@@ -17,11 +16,11 @@ class App extends Component {
       <BrowserRouter>
       <div>
         <Header />
-        <Switch>
+        <Routes>
           <Route path ='/Footer' component= {Footer} />
           <Route path = '/Contact' component= {Contact} />
           <Route path = '/' component ={Main} />
-        </Switch>
+        </Routes>
         
       </div>
       </BrowserRouter>
