@@ -8,12 +8,12 @@ import {
 } from 'reactstrap';
 
 const Main = () => {
-    // const [content, setContent] = useState("");
+    let [content, setContent] = useState("");
 
-    // useEffect(()=>{
-    //     content = fetch("http://localhost:5000/")
-    //     console.log(content)
-    // });
+    useEffect(()=>{
+        content = fetch("http://localhost:5000/").then(response => response.text()).then(data => setContent(data))
+        console.log(content)
+    });
 
     return (
         <div >
@@ -22,6 +22,7 @@ const Main = () => {
                 <div className="row">
                     <div className="col-md-8 border" >
                         <p>try border</p>
+                        <p>{content}</p>
                     </div>
                 </div>
             </div>
